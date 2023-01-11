@@ -1,0 +1,15 @@
+.menu>a{
+    font-variant: small-caps;
+    color: aqua;
+    text-decoration: none;
+}
+.menu>a:visited{
+    color: black;
+}
+.menu>a:hover{
+    color: red;
+    text-decoration: underline;
+}
+body{
+    text-align: center;
+}
