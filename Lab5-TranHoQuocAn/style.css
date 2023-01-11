@@ -1,0 +1,45 @@
+.khung{
+    text-align: center;
+}
+img{
+    width: 20%;
+    height: 150px;
+    background-color: black;
+    border: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+
+img:hover{
+    background-color: aqua;
+    box-shadow: 0px 0px 10px red;
+}
+.cot{
+    width: 25%;
+    height: 300px;
+    float: left;
+}
+.sp{
+    width: 90%;
+}
+.sp>img{
+    width: 90%;
+}
+h1 {
+    font-size: 16pt;
+    color: rgb(255, 0, 119);
+    font-variant: small-caps;
+}
+h2{
+    font-size: 16pt;
+    color: blue;
+    font-variant: small-caps;
+}
+.gia{
+    color: red;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.gia>del{
+    color: gray;
+}
