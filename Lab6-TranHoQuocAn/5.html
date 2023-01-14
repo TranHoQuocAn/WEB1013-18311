@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập người dùng</title>
+        <link href="../css/resetcss.css" rel="stylesheet" type="text/css">
+        <link href="../css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+        <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css">
+        </head>
+        <body data-new-gr-c-s-check-loaded="14.1080.0" data-gr-ext-installed="">
+        <div id="page">
+        <div id="login-page">
+        <div class="form-login">
+        <div class="main-form-login">
+        <div class="logo-form-login">
+        <a href="">
+        <img src="../images/logo.jpg">
+        </a>
+        </div>
+        <div class="tt-st3">ĐĂNG NHẬP</div>
+        <div id="display-error" style="margin-bottom: 10px"></div>
+        <form action="" method="post" id="login">
+        <div class="form-group form-group-st2">
+        <label>Số điện thoại</label>
+        <input type="text" name="txt_mobile" required="">
+        </div>
+        <div class="form-group form-group-st2">
+        <label>Mật khẩu</label>
+        <input type="password" name="txt_password" required="">
+        </div>
+        
+        
+        
+        <div class="buttom-form-login">
+        <button class="buttom-st3">Đăng nhập</button>
+        </div>
+        </form>
+        <div class="bottom-form-login">
+        <a target="_blank" href="https://daihoc.fpt.edu.vn/user/login/lay-lai-mat-khau.php">Lấy lại mật
+        khẩu</a> | <a target="_blank" href="https://daihoc.fpt.edu.vn/tuyen-sinh-dh-fpt/">Đăng ký</a>
+        </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        </div>
+        </div>
+        <script src="../js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.idTabs.min.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("form#login").submit(function (event) {
+                    event.preventDefault();
+                    var $thisForm = $(this).serialize();
+                    $.ajax({
+                        type: "POST",
+                        url: "login.php",
+                        data: $(this).serialize(),
+                        success: function ($response) {
+                            console.log($response);
+                            var obj = JSON.parse($response);
+                            switch (obj.status) {
+                                case 'success':
+                                    email_insider(obj.email);
+                                    window.location.replace("https://daihoc.fpt.edu.vn/user/profile");
+                                    break;
+                                case "error" :
+                                    $('#display-error').html('');
+                                    $("#display-error").append("<b style='color: orangered; font-size: 13px'>" + obj.message + "</b>");
+                                    break;
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            function email_insider(email_user) {
+                window.insider_object = {
+                    "user": {
+                        "email": email_user,
+                        "gdpr_optin": true,
+                        "email_optin": true,
+                    }
+                }
+            }
+        </script>
+        <script async="" src="//fptuniversityvn.api.useinsider.com/ins.js?id=10004316" type="text/javascript"></script>
+        <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;74f2c0ac2fbaddf2&quot;,&quot;token&quot;:&quot;56c6dd7e4ecf4947aa540f48289e45af&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+        
+        </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+</body>
+</html>

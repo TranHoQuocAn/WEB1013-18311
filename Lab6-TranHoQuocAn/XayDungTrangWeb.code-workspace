@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../Lab3-TranHoQuocAn"
+		},
+		{
+			"path": "../Lab4-TranHoQuocAn"
+		},
+		{
+			"path": "../Lab5-TranHoQuocAn"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "XayDungTrangWeb"
+	}
+}
