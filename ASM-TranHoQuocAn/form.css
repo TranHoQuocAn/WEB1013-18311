@@ -1,0 +1,114 @@
+body {
+  background-color: #e6fff2;
+}
+form {
+  background-color: white;
+  box-shadow: 0px 2px 10px;
+
+  margin: 0 auto;
+  width: 1000px;
+}
+form > ul > li {
+  display: inline-block;
+  list-style: none;
+}
+.form-1 {
+  padding-top: 40px;
+
+  width: 480px;
+  height: 500px;
+  background-image: linear-gradient(to right, #66f0ff, #ff33dd);
+}
+
+.fb,
+.tw,
+.gg,
+.tl {
+  text-decoration: none;
+
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  position: relative;
+  left: 37px;
+}
+
+.fb > h2 {
+  text-align: center;
+  padding-top: 20px;
+  width: 400px;
+  height: 50px;
+  border: 1px solid gray;
+  /* background-color: 	#0033CC ; */
+  background-color: white;
+  color: blue;
+  border-radius: 5px;
+}
+.tw > h2 {
+  width: 400px;
+  text-align: center;
+  padding-top: 20px;
+  height: 50px;
+  border: 1px solid gray;
+  background-color: white;
+  color: blue;
+  border-radius: 5px;
+}
+
+.gg > h2 {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  color: blue;
+  border-radius: 5px;
+}
+
+.tl > h2 {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  border: 1px solid gray;
+  background-color: white;
+  color: blue;
+  border-radius: 5px;
+}
+
+.form-2 {
+  height: 500px;
+
+  width: 480px;
+}
+.form-2 > input,
+button {
+  position: relative;
+  left: 60px;
+}
+.form-2 > p {
+  margin-left: 123px;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+.form-2 > input {
+  font-size: 20px;
+
+  margin: 0 auto;
+  padding-left: 10px;
+  border-radius: 8px;
+  height: 70px;
+  width: 80%;
+}
+
+.form-2 > button {
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #66f0ff, #ff33dd);
+  box-shadow: gray 2px 6px 12px;
+  border-radius: 8px;
+  height: 70px;
+  width: 82.5%;
+  border: none;
+}

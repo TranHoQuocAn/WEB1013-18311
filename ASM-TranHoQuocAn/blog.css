@@ -1,0 +1,162 @@
+.atc-blog {
+  padding-top: 120px;
+  height: 585px;
+  background-color: #e160cb;
+}
+
+.top-txt > ul > li {
+  display: inline-block;
+  list-style: none;
+}
+
+.ctn-blog {
+  background-color: #eaf1f4;
+}
+.top-txt > ul {
+  padding-top: 20px;
+  padding-left: 850px;
+}
+
+.top-txt {
+  padding-top: 140.15px;
+}
+
+.top-txt > ul > li > input {
+  width: 605px;
+  height: 52px;
+  border-radius: 20px;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 27px;
+  border: none;
+  margin: 0 auto;
+
+  /* identical to box height, or 193% */
+
+  /* Dark */
+
+  color: #0d0f45;
+}
+.top-txt > ul > li > input:hover {
+  border: none;
+}
+
+.top-txt > ul > li > button {
+  position: relative;
+  top: 3px;
+  right: 77px;
+  background-color: #e160cb;
+  border: 1px solid white;
+  padding: 13px 25px;
+  border-radius: 20px;
+}
+
+.top-txt > h3 {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 112.5%;
+  /* or 65px */
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  /* black */
+
+  color: #292525;
+}
+
+.top-txt > p {
+  word-spacing: 5px;
+  margin-top: 19px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 157.2%;
+  /* or 31px */
+
+  text-align: center;
+
+  /* black */
+
+  color: #252829;
+
+  opacity: 0.6;
+}
+
+.atc-than-blog {
+  padding-top: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1600px;
+  grid-gap: 20px;
+
+  margin: 0 auto;
+}
+
+.nd-blog {
+  border-radius: 25px;
+  background-color: white;
+  margin: 0 auto;
+
+  width: 325px;
+  height: 425px;
+  box-shadow: white 0px 8px 10px;
+}
+
+.nd-blog > h4 {
+  margin-top: 26.17px;
+
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  text-align: center;
+  letter-spacing: -0.5px;
+
+  color: #292525;
+}
+
+.nd-blog > p {
+  margin-top: 9px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.btn-atc-blog > button {
+  height: 45.04px;
+  width: 135.42px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+  background-color: #e160cb;
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+
+  color: #ffffff;
+}
+
+.btn-atc-blog {
+  padding-top: 18px;
+  text-align: center;
+}
